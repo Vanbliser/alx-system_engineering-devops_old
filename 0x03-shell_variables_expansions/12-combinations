@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -en 'aa\n' '\b'{a..n}{b..z}'\n' '\b'o{a..n}'\n' '\b'o{p..z}'\n' '\b'{p..z}{a..z}'\n'
+echo -e 'aa' '\n'{a..n}{b..z} '\n'o{a..n} '\n'o{p..z} '\n'{p..z}{a..z}
