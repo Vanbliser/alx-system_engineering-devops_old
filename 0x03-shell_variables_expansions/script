@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Command is $1\nFile name is $2\nCommit message is $3"
+cmd=$1
+file=$2
+msg=$3
+echo '#!/bin/bash' > $file
+echo "$cmd" >> $file
+chmod u+x $file
+git add .
+git commit -m "$msg"
+git push
