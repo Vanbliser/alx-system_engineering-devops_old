@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($(echo $PATH | grep -o :* | grep -c :)+1))
+echo $PATH | fr ':' '\n' | wc -l
